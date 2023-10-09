@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>message</title>
+    <link type="text/css" rel="stylesheet" href="css/message.css" />
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="header">
+        <div class="blog">
+            <h1>个人博客</h1>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <div><a href="index.html">首页</a></div>
+                </li>
+                <li>
+                    <div><a href="Hobbies.html">我的爱好</a></div>
+                </li>
+                <li>
+                    <div><a href="travel.html">我的旅行相册</a></div>
+                </li>
+                <li>
+                    <div><a href="message.html">留言</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 个人爱好标题 -->
+    <div class="tit">
+        <h1>留言</h1>
+    </div>
+
+    <div class="wapper guodutu">
+        <p>欢迎留言!
+        <div class="shuipingxian"></div>
+        </p>
+    </div>
+    <!-- 留言框 -->
+    <div class="input wapper">
+        <input type="text" style="width: 100%; height: 200px;" placeholder="输入留言">
+    </div>
+    <!-- 按键 -->
+    <div class="wapper" style="text-align: center; margin-top: 20px;">
+        <button class="button button1">提交</button>
+    </div>
+    <!-- 底部 -->
+    <div class="foot">
+        <h1 style="color: aliceblue;">个人博客</h1>
+</div>
+</body>
+
+</html>
+<script>
+    const currentUrl = window.location.href; // 获取当前页面的URL
+    const navLinks = document.querySelectorAll('.header a'); // 获取所有导航链接
+
+    navLinks.forEach(link => {
+        if (link.href === currentUrl) {
+            link.classList.add('active'); // 添加active类名
+        }
+    });
+</script>

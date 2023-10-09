@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人博客</title>
+    <link type="text/css" rel="stylesheet" href="css/index.css" />
+</head>
+
+<div>
+    <!-- 导航栏 -->
+    <div class="header">
+        <div class="blog">
+            <h1>个人博客</h1>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <div><a href="index.html">首页</a></div>
+                </li>
+                <li>
+                    <div><a href="Hobbies.html">我的爱好</a></div>
+                </li>
+                <li>
+                    <div><a href="travel.html">我的旅行相册</a></div>
+                </li>
+                <li>
+                    <div><a href="message.html">留言</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 过度图 -->
+    <div class="guodutu wapper" style="background-image: url(image/OIP-C.jpg);">
+        <div>Welcome to my personal blog</div>
+    </div>
+
+    <!-- 个人介绍 -->
+    <div style="margin-top: 20px;">
+        <div class="ge_ren_jie_shao wapper">
+            <div class="img"><img src="image/touxiang.jpg" alt=""></div>
+        </div>
+        <div class="wapper">
+            <h1>个人介绍</h1>
+            <p style="margin-top: 10px;">个人爱好:看电影</p>
+            <p style="margin-top: 10px;">喜欢的电影:《阿甘正传》、《猫和老鼠》</p>
+            <p style="margin-top: 10px;">人生格言:绵绵为功,久久为力</p>
+            <p style="margin-top: 10px;">人生理想:能够天天摆烂</p>
+            <p style="margin-top: 10px;">喜欢的书籍:《三国演义》、《水浒传》</p>
+        </div>
+    </div>
+
+    <!-- 分割线 -->
+    <div style="height: 1px;background-color: black; margin-top: 20px;" class="wapper"></div>
+
+    <!-- 兴趣爱好 -->
+    <div style="margin-top: 20px;">
+        <div class="xingquaihao wapper">
+            <div class="img"><img src="image/pingpang.jpg" alt=""></div>
+        </div>
+        <div class="wapper">
+            <h1 style="margin-bottom: 10px;">兴趣爱好</h1>
+            <p style="line-height: 30px; width: 1000px;">乒乓球（table tennis），被称为中国的“国球”，是一种世界流行的球类体育项目，包括进攻、对抗和防守。
+                乒乓球起源于英国，“乒乓球”一名起源自1900年，因其打击时发出“Ping
+                Pong”的声音而得名。在中国大陆以“乒乓球”作为它的官方名称，中国香港及澳门等地区亦同。1926年1月，在德国柏林举行了一次国际乒乓球赛，共有9个国家的64名男运动员参加了比赛。同年12月，国际乒乓球联合会正式成立，并把在伦敦举行的欧洲锦标赛命名为第一届世界乒乓球锦标赛。
+                乒乓球组织机构设有国际乒乓球联合会、亚洲乒乓球联盟、中国乒乓球协会。</p>
+        </div>
+    </div>
+
+    <!-- 分割线 -->
+    <div style="height: 1px;background-color: black; margin-top: 20px;" class="wapper"></div>
+    </body>
+
+
+    <!-- 生肖部分 -->
+    <div style="margin-top: 20px;">
+        <div class="shengxiao wapper">
+            <div class="img"><img src="image/shengxiao.jpg" alt=""></div>
+        </div>
+        <div class="wapper">
+            <h1>个人生肖</h1>
+            <p style="line-height: 40px; margin-top: 10px;">十二生肖是十二地支的形象化代表，即子（鼠）、丑（牛）、寅（虎）、卯（兔）、辰（龙）、巳（蛇）、午（马）、未（羊）、申（猴）、酉（鸡）、戌（狗）、亥（猪），随着历史的发展逐渐融合到相生相克的民间信仰观念，反映在婚姻、人生、年运等，每一种生肖都有丰富的传说，并以此形成一种观念阐释系统，成为民间文化中的形象哲学，如婚配上的属相、庙会祈祷、本命年等。现代，更多人把生肖作为春节的吉祥物，成为娱乐文化活动的象征。
+            </p>
+        </div>
+    </div>
+
+    <div class="foot">
+            <h1 style="color: aliceblue;">个人博客</h1>
+    </div>
+</html>
+<script>
+    const currentUrl = window.location.href; // 获取当前页面的URL
+    const navLinks = document.querySelectorAll('.header a'); // 获取所有导航链接
+
+    navLinks.forEach(link => {
+        if (link.href === currentUrl) {
+            link.classList.add('active'); // 添加active类名
+        }
+    });
+</script>

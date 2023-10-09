@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel</title>
+    <link type="text/css" rel="stylesheet" href="css/travel.css" />
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="header">
+        <div class="blog">
+            <h1>个人博客</h1>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <div><a href="index.html">首页</a></div>
+                </li>
+                <li>
+                    <div><a href="Hobbies.html">我的爱好</a></div>
+                </li>
+                <li>
+                    <div><a href="travel.html">我的旅行相册</a></div>
+                </li>
+                <li>
+                    <div><a href="message.html">留言</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 个人爱好标题 -->
+    <div class="tit">
+        <h1>旅行日记</h1>
+    </div>
+
+
+    <div class="des wapper">
+        <p>旅行就像小马过河一样，如果你不亲身体验、亲眼见识一下，你永远不知道旅行对你来说意味着什么？
+            永远都不会知道自己其实有无限可能！
+        </p>
+        <p>旅行是人生中的养分，通过离开自己所熟悉的环境去遇见新的人、了解不同的文化，会丰富你的人生，让你变得与众不同起来。
+
+        </p>
+        <p>我们常说：身体和灵魂总有一个在路上。便一直在思考，到底如何才能找到诗和远方？
+            到底旅行想寻找什么？或者说想得到什么？其实，每个人都需要在一个更广阔的世界里去开阔眼界。
+            旅行是放松、是见识，是走马观花，是用风景丰满人生！每个人都在用自己的方式完成世界的丈量，去寻觅能让心栖息之处。
+            旅行不是万能药，治愈不了你平庸的生活！却能让你的世界和别人不一样！
+        </p>
+        <p>每个人的旅行都是独一无二的，重点不是去了哪里，看了哪些风景，而是通过旅行得到了什么。
+            对于我来说，见识和眼见很重要。旅行中既有赏心悦目的美景，又有垂涎欲滴的美食，还有乐趣无穷的趣事。
+            当你看多了美景，遇到了更多的人或事，你会变得豁达乐观起来，而不再是一味抱怨，心态决定姿态。
+            旅行不仅让我饱览了美景，宽阔了心境，更让我找回了被柴米油盐磨损的灵气与鲜活！
+        </p>
+        <p>
+            古人云：“读万卷书不如行万里路”，是旅行让我明白，见识才是一个女人炫耀的资本。
+            旅行就如同一本会呼吸的百科全书，你总能在其中接触到很多书本中没有的东西，慢慢地你的视野宽阔了，谈资也多了，人也变得更加有趣了，
+            慢慢的自己就像别人眼中一本喜闻乐见的书。
+            当旅行和读书两者结合，可以让我看到多样世界观，知晓多重人生观，从而建立多元价值观，远离狭隘。看的越多，思考的越多，当一个人，见过世界的广阔、不同的生活环境、知道了生命更多的活法，便会慢慢思考自己要过什么样的生活？寻找自己人生的可能！
+            旅行不仅让我看到了生命更多的可能性，也让我开始重新思考人生和生命的意义。
+        </p>
+    </div>
+
+    <div class="wapper" style="text-align: center; margin-top: 20px;">
+        <img src="image/f1.jpg" alt="" style="border-radius: 50%;">
+        <img src="image/f2.jpg" alt="" style="border-radius: 50%;">
+        <img src="image/f3.jpg" alt="" style="border-radius: 50%;">
+    </div>
+    <div class="wapper" style="margin-top: 20px; text-align: center;">
+        <div style="display: inline; margin-right: 20px;">
+            <img src="image/f4.jpg" alt="">
+        </div>
+        <div style="display: inline;">
+            <img src="image/f5.jpg" alt="">
+        </div>
+        <div style="display: inline; margin-left: 20px;">
+            <img src="image/f6.jpg" alt="">
+        </div>
+    </div>
+    <div class="wapper" style="margin-top: 20px; text-align: center;">
+        <div style="display: inline; margin-right: 20px;">
+            <img src="image/f7.jpg" alt="">
+        </div>
+        <div style="display: inline;">
+            <img src="image/f8.jpg" alt="">
+        </div>
+        <div style="display: inline; margin-left: 20px;">
+            <img src="image/f9.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="foot">
+        <h1 style="color: aliceblue;">个人博客</h1>
+    </div>
+</body>
+
+</html>
+<script>
+    const currentUrl = window.location.href; // 获取当前页面的URL
+    const navLinks = document.querySelectorAll('.header a'); // 获取所有导航链接
+
+    navLinks.forEach(link => {
+        if (link.href === currentUrl) {
+            link.classList.add('active'); // 添加active类名
+        }
+    });
+</script>

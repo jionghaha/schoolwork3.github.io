@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+    <link type="text/css" rel="stylesheet" href="css/Hobbies.css" />
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="header">
+        <div class="blog">
+            <h1>个人博客</h1>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <div><a href="index.html">首页</a></div>
+                </li>
+                <li>
+                    <div><a href="Hobbies.html">我的爱好</a></div>
+                </li>
+                <li>
+                    <div><a href="travel.html">我的旅行相册</a></div>
+                </li>
+                <li>
+                    <div><a href="message.html">留言</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 个人爱好标题 -->
+    <div class="tit">
+        <h1>个人爱好</h1>
+    </div>
+
+    <!-- 内容 -->
+    <div class="first">
+        <img src="image/xiangqi.jpg" alt="">
+        <h1>象棋</h1>
+        <p style="line-height: 25px;">
+            中国象棋是起源于中国的一种棋，属于二人对抗性游戏的一种，在中国有着悠久的历史。
+            由于用具简单，趣味性强，成为流行极为广泛的棋艺活动。
+            中国象棋是中国棋文化，也是中华民族的文化瑰宝，它源远流长，趣味浓厚，基本规则简明易懂。
+            中国象棋在中国的群众基础远远超过围棋，是普及最广的棋类项目，中国象棋已流传到十几个国家和地区。
+            中国象棋使用方形格状棋盘，圆形棋子共有32个，红黑二色各有16个棋子，摆放和活动在交叉点上。比赛开始后，双方交替行棋，消灭掉对方的皇帝棋子("将"或"帅")即可获得胜利。
+        </p>
+    </div>
+    <div class="second">
+        <img src="image/yumaoqiu.jpg" alt="">
+        <h1>羽毛球</h1>
+        <p style="line-height: 25px;">羽毛球（Badminton）是一项隔着球网，使用长柄网状球拍击打用羽毛和软木制作而成的一种小型球类的室内运动项目。
+            羽毛球比赛在长方形的场地上进行，场地中间有网相隔，双方运用各种发球、击球和移动等技战术，将球在网上往返对击，以不使球落在本方有效区域内，或使对方击球失误为胜。
+            羽毛球运动的起源有很多说法，但最认可的是起源于14—15世纪的日本。而现代羽毛球运动是起源于印度，形成于英国。1875年，羽毛球运动正式出现于人们的视野中。1893年，英国的羽毛球俱乐部逐渐发展起来，成立了第一个羽毛球协会，规定了场地的要求和运动的标准。
+            1939年，国际羽联通过了各会员国共同遵守的第一部《羽毛球规则》。2006年，国际羽毛球联合会（IBF）的正式名称更改为羽毛球世界联合会（BWF），即世界羽联。
+            羽毛球运动的最高组织机构是世界羽联，1934年在伦敦成立。中国最高组织机构是中国羽毛球协会，1958年9月11日在武汉成立。
+        </p>
+    </div>
+    <div class="third">
+        <img src="image/lanqiu.jpg" alt="">
+        <h1>篮球</h1>
+        <p style="line-height: 25px;">
+            篮球（basketball），是以手为中心的身体对抗性体育运动，是奥运会核心比赛项目。
+            1891年12月21日，由美国马萨诸塞州斯普林菲尔德基督教青年会训练学校体育教师詹姆士·奈史密斯发明。
+            1896年，篮球运动传入中国天津。1904年，圣路易斯奥运会上第1次进行了篮球表演赛。
+            1932年，国际篮球联合会成立。1936年，篮球在柏林奥运会中被列为正式比赛项目，
+            中国也首次派出篮球队参加奥运会篮球项目。1956年10月，中国篮球协会成立。
+            1992年，巴塞罗那奥运会开始，职业选手可以参加奥运会篮球比赛。
+        </p>
+    </div>
+
+    <!-- 底部 -->
+    <div class="foot">
+        <h1 style="color: aliceblue;">个人博客</h1>
+    </div>
+</body>
+<script>
+    const currentUrl = window.location.href; // 获取当前页面的URL
+    const navLinks = document.querySelectorAll('.header a'); // 获取所有导航链接
+
+    navLinks.forEach(link => {
+        if (link.href === currentUrl) {
+            link.classList.add('active'); // 添加active类名
+        }
+    });
+</script>
+</html>
